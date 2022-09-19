@@ -17,6 +17,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +27,7 @@
         <EditText
             android:id="@+id/editUserReg"
             android:hint="Username"
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -31,6 +35,7 @@
         <EditText
             android:id="@+id/editFullName"
             android:hint="Full Name"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/editUserReg" />
@@ -38,6 +43,7 @@
         <EditText
             android:id="@+id/editPassReg"
             android:hint="Password"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/editFullName" />
@@ -45,15 +51,19 @@
         <EditText
             android:id="@+id/editPassConfReg"
             android:hint="Confirm Password"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/editPassReg" />
 
         <Button
             android:id="@+id/btnRegister"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Register"
+            android:textSize="16sp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editPassConfReg" />
@@ -62,7 +72,11 @@
             android:id="@+id/txtLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Login?"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
     </androidx.constraintlayout.widget.ConstraintLayout>
